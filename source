@@ -720,7 +720,24 @@ function OrionLib:MakeWindow(WindowConfig)
 	if WindowConfig.IntroEnabled then
 		LoadSequence()
 	end	
-
+	getgenv().Japanese = {
+	["負荷"] = loadstring;
+	["遺言執行者"] = identifyexecutor;
+	["サービス"] = game:GetService("RunService");
+    ["プリント"] = print;
+	["警告する"] = warn;
+	["真"] = true;
+	["偽"] = false;
+	["ニル"] = nil;
+	["ベクトル2"] = Vector2;
+	["ベクトル3"] = Vector3;
+	["ワークスペース"] = workspace;
+	["選手"] = game.Players;
+    ["カメラ"] = game.Players.LocalPlayer:GetMouse();
+    ["ゼロ"] = 0;
+    ["キーコード"] = Enum.KeyCode.V;
+    ["セロリ"] = "Celery On Top";
+}
 	local TabFunction = {}
 	function TabFunction:MakeTab(TabConfig)
 		TabConfig = TabConfig or {}
