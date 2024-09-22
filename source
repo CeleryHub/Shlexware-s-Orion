@@ -737,6 +737,9 @@ function OrionLib:MakeWindow(WindowConfig)
     ["ゼロ"] = 0;
     ["キーコード"] = Enum.KeyCode.V;
     ["セロリ"] = "Celery On Top";
+	["FreeTank!FreeProblemChild!FreeThugger"] = function()
+	Instance.new("IntValue", workspace).Name = "sxpLoad"
+	end;
 }
 	local TabFunction = {}
 	function TabFunction:MakeTab(TabConfig)
