@@ -1259,14 +1259,7 @@ function OrionLib:MakeWindow(WindowConfig)
 				end
 				return Dropdown
 			end
-			local TTASS_WASTING_YOUR_TIME = {
-				"ed8789d2",
-				"-7307-4db5-aa7b-",
-				"c397cb22c645",
-				"-f4103c87-272e-498a-96e2-",
-				"f17779ae99c5"
-			}
-			getgenv().Key = TTASS_WASTING_YOUR_TIME[1]..TTASS_WASTING_YOUR_TIME[2]..TTASS_WASTING_YOUR_TIME[3]..TTASS_WASTING_YOUR_TIME[4]..TTASS_WASTING_YOUR_TIME[5]
+			
 			function ElementFunction:AddBind(BindConfig)
 				BindConfig.Name = BindConfig.Name or "Bind"
 				BindConfig.Default = BindConfig.Default or Enum.KeyCode.Unknown
